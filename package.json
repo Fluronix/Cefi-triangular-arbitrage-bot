@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ccxws": "^0.47.0",
+    "websocket": "^1.0.34"
+  }
+}

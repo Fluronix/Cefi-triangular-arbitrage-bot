@@ -1,0 +1,31 @@
+import { BasicClient } from "../BasicClient";
+import { ClientOptions } from "../ClientOptions";
+import { Level2Snapshot } from "../Level2Snapshots";
+import { Level2Update } from "../Level2Update";
+import { Level3Update } from "../Level3Update";
+import { Market } from "../Market";
+import { Ticker } from "../Ticker";
+import { Trade } from "../Trade";
+export declare class CoinbaseProClient extends BasicClient {
+    constructor({ wssPath, watcherMs }?: ClientOptions);
+    protected _sendSubTicker(remote_id: any): void;
+    protected _sendUnsubTicker(remote_id: any): void;
+    protected _sendSubTrades(remote_id: any): void;
+    protected _sendUnsubTrades(remote_id: any): void;
+    protected _sendSubLevel2Updates(remote_id: any): void;
+    protected _sendUnsubLevel2Updates(remote_id: any): void;
+    protected _sendSubLevel3Updates(remote_id: any): void;
+    protected _sendUnsubLevel3Updates(remote_id: any): void;
+    protected _sendSubCandles: (...args: any[]) => any;
+    protected _sendUnsubCandles: (...args: any[]) => any;
+    protected _sendSubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendSubLevel3Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel3Snapshots: (...args: any[]) => any;
+    protected _onMessage(raw: any): void;
+    protected _constructTicker(msg: any, market: Market): Ticker;
+    protected _constructTrade(msg: any, market: Market): Trade;
+    protected _constructLevel2Snapshot(msg: any, market: Market): Level2Snapshot;
+    protected _constructLevel2Update(msg: any, market: Market): Level2Update;
+    protected _constructLevel3Update(msg: any, market: Market): Level3Update;
+}

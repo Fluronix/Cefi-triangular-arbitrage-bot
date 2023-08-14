@@ -1,0 +1,1 @@
+{"version":3,"file":"HuobiClient.js","sourceRoot":"","sources":["../../../src/exchanges/HuobiClient.ts"],"names":[],"mappings":";;;AACA,2CAAwC;AAExC,MAAa,WAAY,SAAQ,qBAAS;IACtC,YAAY,EAAE,OAAO,GAAG,wBAAwB,EAAE,SAAS,KAAoB,EAAE;QAC7E,KAAK,CAAC,EAAE,IAAI,EAAE,OAAO,EAAE,OAAO,EAAE,SAAS,EAAE,CAAC,CAAC;IACjD,CAAC;CACJ;AAJD,kCAIC"}

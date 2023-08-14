@@ -1,0 +1,5 @@
+binance-connector
+requests
+websocket-client
+pandas
+colorama

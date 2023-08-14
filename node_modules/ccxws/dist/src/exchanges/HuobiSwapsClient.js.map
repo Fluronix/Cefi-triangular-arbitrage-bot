@@ -1,0 +1,1 @@
+{"version":3,"file":"HuobiSwapsClient.js","sourceRoot":"","sources":["../../../src/exchanges/HuobiSwapsClient.ts"],"names":[],"mappings":";;;AACA,2CAAwC;AAExC,MAAa,gBAAiB,SAAQ,qBAAS;IAC3C,YAAY,EAAE,OAAO,GAAG,4BAA4B,EAAE,SAAS,KAAoB,EAAE;QACjF,KAAK,CAAC,EAAE,IAAI,EAAE,aAAa,EAAE,OAAO,EAAE,SAAS,EAAE,CAAC,CAAC;QACnD,IAAI,CAAC,gBAAgB,GAAG,IAAI,CAAC;IACjC,CAAC;CACJ;AALD,4CAKC"}

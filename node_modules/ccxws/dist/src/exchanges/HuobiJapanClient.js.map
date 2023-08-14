@@ -1,0 +1,1 @@
+{"version":3,"file":"HuobiJapanClient.js","sourceRoot":"","sources":["../../../src/exchanges/HuobiJapanClient.ts"],"names":[],"mappings":";;;AACA,2CAAwC;AAExC,MAAa,gBAAiB,SAAQ,qBAAS;IAC3C,YAAY,EAAE,OAAO,GAAG,gCAAgC,EAAE,SAAS,KAAoB,EAAE;QACrF,KAAK,CAAC,EAAE,IAAI,EAAE,aAAa,EAAE,OAAO,EAAE,SAAS,EAAE,CAAC,CAAC;IACvD,CAAC;CACJ;AAJD,4CAIC"}

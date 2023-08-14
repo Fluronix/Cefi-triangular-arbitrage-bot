@@ -1,0 +1,1 @@
+{"version":3,"file":"FtxClient.js","sourceRoot":"","sources":["../../../src/exchanges/FtxClient.ts"],"names":[],"mappings":";;;AACA,uCAA0C;AAE1C,MAAa,SAAU,SAAQ,uBAAa;IACxC,YAAY,EAAE,OAAO,GAAG,kBAAkB,EAAE,SAAS,KAAoB,EAAE;QACvE,KAAK,CAAC,EAAE,IAAI,EAAE,KAAK,EAAE,OAAO,EAAE,SAAS,EAAE,CAAC,CAAC;IAC/C,CAAC;CACJ;AAJD,8BAIC"}

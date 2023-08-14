@@ -1,0 +1,1 @@
+{"version":3,"file":"HuobiFuturesClient.js","sourceRoot":"","sources":["../../../src/exchanges/HuobiFuturesClient.ts"],"names":[],"mappings":";;;AACA,2CAAwC;AAExC,MAAa,kBAAmB,SAAQ,qBAAS;IAC7C,YAAY,EAAE,OAAO,GAAG,uBAAuB,EAAE,SAAS,KAAoB,EAAE;QAC5E,KAAK,CAAC,EAAE,IAAI,EAAE,eAAe,EAAE,OAAO,EAAE,SAAS,EAAE,CAAC,CAAC;QACrD,IAAI,CAAC,gBAAgB,GAAG,IAAI,CAAC;IACjC,CAAC;CACJ;AALD,gDAKC"}

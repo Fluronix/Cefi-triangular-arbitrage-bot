@@ -1,0 +1,32 @@
+import semaphore from "semaphore";
+import { BasicClient } from "../BasicClient";
+import { ClientOptions } from "../ClientOptions";
+import { Level2Update } from "../Level2Update";
+import { Market } from "../Market";
+import { Trade } from "../Trade";
+import { Ticker } from "../Ticker";
+export declare class BitflyerClient extends BasicClient {
+    requestSnapshot: boolean;
+    REST_REQUEST_DELAY_MS: number;
+    protected _restSem: semaphore.Semaphore;
+    protected _sendSubCandles: (...args: any[]) => any;
+    protected _sendUnsubCandles: (...args: any[]) => any;
+    protected _sendSubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendSubLevel3Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel3Snapshots: (...args: any[]) => any;
+    protected _sendSubLevel3Updates: (...args: any[]) => any;
+    protected _sendUnsubLevel3Updates: (...args: any[]) => any;
+    constructor({ wssPath, watcherMs, }?: ClientOptions);
+    protected _sendSubTicker(remote_id: any): void;
+    protected _sendUnsubTicker(remote_id: any): void;
+    protected _sendSubTrades(remote_id: any): void;
+    protected _sendSubLevel2Updates(remote_id: any): void;
+    protected _sendUnsubTrades(remote_id: any): void;
+    protected _sendUnsubLevel2Updates(remote_id: any): void;
+    protected _onMessage(data: any): void;
+    protected _createTicker(data: any, market: any): Ticker;
+    protected _createTrades(datum: any, market: any): Trade;
+    protected _createLevel2Update(msg: any, market: Market): Level2Update;
+    protected _requestLevel2Snapshot(market: Market): void;
+}

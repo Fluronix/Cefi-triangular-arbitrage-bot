@@ -1,0 +1,37 @@
+import { BasicClient } from "../BasicClient";
+import { Candle } from "../Candle";
+import { CandlePeriod } from "../CandlePeriod";
+import { ClientOptions } from "../ClientOptions";
+import { CancelableFn } from "../flowcontrol/Fn";
+import { Level2Snapshot } from "../Level2Snapshots";
+import { Level2Update } from "../Level2Update";
+import { Ticker } from "../Ticker";
+import { Trade } from "../Trade";
+export declare class HitBtcClient extends BasicClient {
+    candlePeriod: CandlePeriod;
+    protected _id: number;
+    protected _send: CancelableFn;
+    constructor({ wssPath, throttleMs, watcherMs, }?: ClientOptions);
+    protected _beforeClose(): void;
+    protected __send(msg: any): void;
+    protected _sendSubTicker(remote_id: string): void;
+    protected _sendUnsubTicker(remote_id: string): void;
+    protected _sendSubTrades(remote_id: string): void;
+    protected _sendUnsubTrades(remote_id: string): void;
+    protected _sendSubCandles(remote_id: string): void;
+    protected _sendUnsubCandles(remote_id: string): void;
+    protected _sendSubLevel2Updates(remote_id: string): void;
+    protected _sendUnsubLevel2Updates(remote_id: string): void;
+    protected _sendSubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel2Snapshots: (...args: any[]) => any;
+    protected _sendSubLevel3Snapshots: (...args: any[]) => any;
+    protected _sendUnsubLevel3Snapshots: (...args: any[]) => any;
+    protected _sendSubLevel3Updates: (...args: any[]) => any;
+    protected _sendUnsubLevel3Updates: (...args: any[]) => any;
+    protected _onMessage(raw: string): void;
+    protected _constructTicker(param: any, market: any): Ticker;
+    protected _constructTradesFromMessage(datum: any, market: any): Trade;
+    protected _constructCandle(datum: any): Candle;
+    protected _constructLevel2Snapshot(data: any, market: any): Level2Snapshot;
+    protected _constructLevel2Update(data: any, market: any): Level2Update;
+}
