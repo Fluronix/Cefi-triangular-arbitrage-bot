@@ -1,7 +1,7 @@
 # Cefi-triangular-arbitrage-bot
 This is a triangular arbitrage bot, execution is carry on binance exchange
 Watch the installation tutorial video:
-To kickstart with the code: https://youtu.be/c8pUytref https://youtu.be/D4uArQ5bcHg
+To kickstart with the code: https://youtu.be/c8pUytref_M https://youtu.be/D4uArQ5bcHg
 
 1. On the project root directory run "npm i"
 2. cd to client directory and run "pip install -r requirements.txt"
